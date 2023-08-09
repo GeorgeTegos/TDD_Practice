@@ -23,7 +23,7 @@ class TestFizzBuzz(unittest.TestCase):
                 print(textToPrint)
                 self.listToAssert.append(textToPrint)
 
-        self.assertEqual('FizzBuzz', self.listToAssert[0])
+        self.assertEqual('FizzBuzz', self.listToAssert[14])
 
 
 
