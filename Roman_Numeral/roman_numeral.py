@@ -15,7 +15,9 @@ class RomanNumeral:
         return string_to_return + 'M'*thousands
     
     def find_hundreds(self,number):
-        pass
+        string_to_return =''
+        hundreds = number % 1000
+        return hundreds
         
 
 
