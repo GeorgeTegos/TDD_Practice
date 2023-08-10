@@ -10,6 +10,7 @@ class RomanNumeral:
         
 
     def return_string_from_roman_numerals(self,number_to_search):
+        string_to_return=''
         for key,value in self.roman_numerals.items():
             if value == number_to_search:
                 string_to_return = key
@@ -41,8 +42,9 @@ class RomanNumeral:
         string_to_return = self.return_string_from_roman_numerals(units)
 
         return string_to_return
-
-
+    
+    def convert_integer_into_roman_numeral(self,number):
+        pass
 
 
 
