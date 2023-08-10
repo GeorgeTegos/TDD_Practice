@@ -5,10 +5,10 @@ class TestRomanNumeral(unittest.TestCase):
 
     def setUp(self):
         self.roman_numerals = RomanNumeral()
-        self.number = 3423
+        self.number = 4423
 
     def test_find_thousands(self):
-        self.assertEqual(4,self.roman_numerals.find_thousands(self.number))
+        self.assertEqual('MMMM',self.roman_numerals.find_thousands(self.number))
 
 
 
