@@ -9,7 +9,7 @@ class TestRomanNumeral(unittest.TestCase):
         
 
     def test_return_string_from_roman_numerals(self):
-        self.assertEqual('CD',self.roman_numerals.return_string_from_roman_numerals(900))
+        self.assertEqual('CM',self.roman_numerals.return_string_from_roman_numerals(900))
 
     def test_find_thousands(self):
         self.assertEqual('MMMM',self.roman_numerals.return_thousands_of_a_number(self.number))
