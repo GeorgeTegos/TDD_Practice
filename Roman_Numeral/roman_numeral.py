@@ -17,7 +17,13 @@ class RomanNumeral:
     def find_hundreds(self,number):
         string_to_return =''
         hundreds = number % 1000
-        return hundreds
+        find_dict_key_to_return = (hundreds // 100) * 100
+
+        for key,value in self.roman_numerals.items():
+            if value == find_dict_key_to_return:
+                string_to_return = key
+
+        return string_to_return
         
 
 
