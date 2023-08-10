@@ -26,7 +26,8 @@ class TestRomanNumeral(unittest.TestCase):
     def test_convert_integer_into_roman_numeral(self):
         self.assertEqual('MMMMCDXXIII',self.roman_numerals.convert_integer_into_roman_numeral(self.number))
 
-
+    def test_user_feedback(self):
+        self.assertEqual('Hello World',self.roman_numerals.user_feedback(self.number))
 
 
 if __name__ == '__main__':
