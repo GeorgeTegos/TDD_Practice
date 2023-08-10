@@ -44,7 +44,12 @@ class RomanNumeral:
         return string_to_return
     
     def convert_integer_into_roman_numeral(self,number):
-        pass
+        roman_numeral_to_return = self.return_thousands_of_a_number(number) 
+        roman_numeral_to_return += self.return_hundreds_of_a_number(number)
+        roman_numeral_to_return += self.return_tens_of_a_number(number)
+        roman_numeral_to_return += self.return_units_of_a_number(number)
+
+        return roman_numeral_to_return
 
 
 
