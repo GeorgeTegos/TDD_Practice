@@ -13,8 +13,8 @@ class RomanNumeral:
         for key,value in self.roman_numerals.items():
             if value == number_to_search:
                 string_to_return = key
-        return string_to_return
 
+        return string_to_return
         
     def return_thousands_of_a_number(self,number):
         string_to_return = ''
@@ -26,8 +26,11 @@ class RomanNumeral:
         hundreds = number % 1000
         find_dict_key_to_return = (hundreds // 100) * 100
         string_to_return = self.return_string_from_roman_numerals(find_dict_key_to_return)
+
         return string_to_return
         
+    def tens_of_a_number(self,number):
+        pass
 
 
 

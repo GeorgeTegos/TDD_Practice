@@ -17,6 +17,8 @@ class TestRomanNumeral(unittest.TestCase):
     def test_find_hundreds(self):
         self.assertEqual('CD',self.roman_numerals.return_hundreds_of_a_number(self.number))
 
+    def test_find_tens(self):
+        self.assertEqual('X',self.roman_numerals.tens_of_a_number(self.number))
 
 
 
