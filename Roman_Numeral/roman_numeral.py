@@ -30,7 +30,8 @@ class RomanNumeral:
         return string_to_return
         
     def tens_of_a_number(self,number):
-        pass
+        tens = number % 100
+        return tens
 
 
 
