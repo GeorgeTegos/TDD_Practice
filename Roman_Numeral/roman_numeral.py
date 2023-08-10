@@ -10,6 +10,7 @@ class RomanNumeral:
         
 
     def return_string_from_roman_numerals(self, number_to_search):
+        string_to_return =''
         for key,value in self.roman_numerals.items():
             if value == number_to_search:
                 string_to_return = key
