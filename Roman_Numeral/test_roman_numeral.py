@@ -21,7 +21,7 @@ class TestRomanNumeral(unittest.TestCase):
         self.assertEqual('XX',self.roman_numerals.return_tens_of_a_number(self.number))
 
     def test_return_units_of_a_number(self):
-        self.assertEqual('I',self.roman_numerals.return_units_of_a_number(self.number))
+        self.assertEqual('III',self.roman_numerals.return_units_of_a_number(self.number))
 
 
 
