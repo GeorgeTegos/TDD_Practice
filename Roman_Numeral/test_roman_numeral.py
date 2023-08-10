@@ -11,7 +11,7 @@ class TestRomanNumeral(unittest.TestCase):
         self.assertEqual('MMMM',self.roman_numerals.find_thousands(self.number))
 
     def test_find_hundreds(self):
-        self.assertEqual('CDD',self.roman_numerals.find_hundreds(self.number))
+        self.assertEqual('CD',self.roman_numerals.find_hundreds(self.number))
 
 
 
