@@ -10,6 +10,9 @@ class TestRomanNumeral(unittest.TestCase):
     def test_find_thousands(self):
         self.assertEqual('MMMM',self.roman_numerals.find_thousands(self.number))
 
+    def test_find_hundreds(self):
+        self.assertEqual('CD',self.roman_numerals.find_hundreds(self.number))
+
 
 
 
