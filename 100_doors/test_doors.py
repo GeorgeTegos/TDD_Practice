@@ -13,7 +13,7 @@ class TestDoor(unittest.TestCase):
 
     def test_add_door_to_doors_list(self):
         self.doors.add_door_to_doors_list(self.door_one)
-        self.assertEqual(0,len(self.doors.doors_list))
+        self.assertEqual(1,len(self.doors.doors_list))
 
 
 
