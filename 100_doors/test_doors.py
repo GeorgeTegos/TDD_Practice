@@ -1,5 +1,6 @@
 from door import Door
 from doors import Doors
+from runner import create_100_doors
 import unittest
 
 class TestDoor(unittest.TestCase):
@@ -15,7 +16,8 @@ class TestDoor(unittest.TestCase):
         self.doors.add_door_to_doors_list(self.door_one)
         self.assertEqual(1,len(self.doors.doors_list))
 
-
+    def test_create_100_doors(self):
+        self.assertEqual(99,len(create_100_doors()))
 
 if __name__=='__main__':
     unittest.main()
