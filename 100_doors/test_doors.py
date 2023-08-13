@@ -11,8 +11,9 @@ class TestDoor(unittest.TestCase):
     def test_change_door_status(self):
         self.assertEqual(True,self.door_one.change_door_status())
 
-    def test_add_door_to_doors(self):
-        self.assertEqual(1,len(self.doors.doors_list))
+    def test_add_door_to_doors_list(self):
+        self.doors.add_door_to_doors_list(self.door_one)
+        self.assertEqual(0,len(self.doors.doors_list))
 
 
 
