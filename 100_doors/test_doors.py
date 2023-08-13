@@ -17,7 +17,10 @@ class TestDoor(unittest.TestCase):
         self.assertEqual(1,len(self.doors.doors_list))
 
     def test_create_100_doors(self):
-        self.assertEqual(99,len(create_100_doors()))
+        self.assertEqual(100,len(create_100_doors()))
+
+    def test_populate_doors_with_door_objects(self):
+        self.assertEqual(len(self.doors.doors_list),100)
 
 if __name__=='__main__':
     unittest.main()

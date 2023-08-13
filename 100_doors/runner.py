@@ -4,9 +4,9 @@ from doors import Doors
 doors = Doors()
 
 def create_100_doors():
-    local_list = []
+    list_of_doors_objects = []
     for door_number in range(1,101):
         door = Door(door_number)
-        local_list.append(door)
-    return local_list
+        list_of_doors_objects.append(door)
+    return list_of_doors_objects
 
