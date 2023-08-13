@@ -10,6 +10,6 @@ def create_100_doors():
         list_of_door_objects.append(door)
     return list_of_door_objects
 
-
+# TODO: Iterate and switch status
 
 
