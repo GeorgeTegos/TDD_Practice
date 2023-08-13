@@ -8,5 +8,10 @@ class Doors:
     def add_door_to_doors_list(self,door):
         self.doors_list.append(door)
 
+    def populate_doors_with_door_object(self,list_of_door_objects):
+        for door in list_of_door_objects:
+            self.add_door_to_doors_list(door)
+
+
     
 
