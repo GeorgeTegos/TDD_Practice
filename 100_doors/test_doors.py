@@ -22,7 +22,7 @@ class TestDoor(unittest.TestCase):
     def test_populate_doors_with_door_objects(self):
         list_of_door_objects = create_100_doors()
         self.doors.populate_doors_with_door_object(list_of_door_objects)
-        self.assertEqual(99,len(self.doors.doors_list))
+        self.assertEqual(100,len(self.doors.doors_list))
 
 if __name__=='__main__':
     unittest.main()
