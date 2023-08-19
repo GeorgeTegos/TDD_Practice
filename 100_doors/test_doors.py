@@ -31,6 +31,13 @@ class TestDoor(unittest.TestCase):
         expect = self.doors.doors_list[0].door_status
         self.assertEqual(True,expect)
 
+    def test_iterate_and_change_door_status_by_step(self):
+        list_of_door_objects = create_100_doors()
+        self.doors.populate_doors_with_door_object(list_of_door_objects)
+        self.doors.iterate_and_change_door_status_by_step()    
+        expect = self.doors.doors_list[1].door_status
+        self.assertEqual(True,expect)
+
 
 
 if __name__=='__main__':

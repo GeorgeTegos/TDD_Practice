@@ -16,5 +16,11 @@ class Doors:
         for door in self.doors_list:
             door.change_door_status()
 
+    def iterate_and_change_door_status_by_step(self,step = 1):
+        while step <= 100:
+            for door in self.doors_list[::step]:
+                self.iterate_and_change_door_status()
+                step += 1
+
     
 
