@@ -12,15 +12,13 @@ class Doors:
         for door in list_of_door_objects:
             self.add_door_to_doors_list(door)
 
-    def iterate_and_change_door_status(self):
-        for door in self.doors_list:
-            door.change_door_status()
 
     def iterate_and_change_door_status_by_step(self,step = 1):
-        while step <= 100:
-            for door in self.doors_list[::step]:
-                self.iterate_and_change_door_status()
-                step += 1
+        while step <= len(self.doors_list):
+            for i in range(0,len(self.doors_list),step):
+                self.doors_list[i-1].change_door_status()
+            step += 1
+                
 
     
 
